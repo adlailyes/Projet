@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blank Page - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Calendar-BS4-1.css">
+    <link rel="stylesheet" href="assets/css/Calendar-BS4.css">
+    <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="assets/css/G-Mail-Style-Left-Side-Bar-by-Jigar-Mistry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/untitled-1.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" type="text/css" href="fullcalendar/core/main.css">
+    <link rel="stylesheet" type="text/css" href="fullcalendar/daygrid/main.css">
+    <link rel="stylesheet" type="text/css" href="fullcalendar/timegrid/main.css">
+    <link rel="stylesheet" type="text/css" href="fullcalendar/list/main.css">
+    <link rel="stylesheet" type="text/css" href="fullcalendar/interaction/main.css">
+    
+    
+    <script type="text/javascript" src="fullcalendar/core/main.js"></script>
+    <script type="text/javascript" src="fullcalendar/daygrid/main.js"></script>
+    <script type="text/javascript" src="fullcalendar/timegrid/main.js"></script>
+    <script type="text/javascript" src="fullcalendar/list/main.js"></script>
+    <script type="text/javascript" src="fullcalendar/interaction/main.js"></script>
+    <script>
+
+      let evenements = [{
+     
+      	"title" :" reparation vehicule matricule 1256",
+      "start" : "2020-05-23 09:12:00",
+      	"end" : "2020-05-23 10:12:00",
+      "backgroundColor": "#a7ff83"
+      }];
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: [ 'dayGrid' , 'timeGrid','list','interaction'],
+          defaultView: 'timeGridWeek',
+          locale:'fr',
+          header:{
+          	left:'prev,next today',
+          	center:'title',
+          	right:'dayGridMonth, timeGridWeek, list'
+          },
+          buttonText:{
+          	today:'Aujourd\'hui',
+          	month:'Mois',
+          	week:'semaine',
+          	list:'liste'
+
+          },
+          events:evenements,
+          nowIndicator: true,
+          editable : true,
+
+
+
+        });
+
+        calendar.render();
+      });
+
+    </script>
+</head>
+
+<body id="page-top" >
+	
+    <div id="wrapper" >
+        <!-- Start: G-Mail Style Left-Side-Bar by Jigar Mistry -->
+        <div class="shadow leftsidebar-div scrollbar scrollbar-indigo thin" id="main-left-nav">
+            <ul class="nav leftsidebar not-expanded-leftsidebar">
+                <!-- Start: Ticket -->
+                <li class="nav-item sub-menu-item" style="margin-top: 21px;"><i class="fa fa-home"></i><span href="#"><a class="active">Accueil</a></span><button class="btn btn-sm collapse-menu-btn" type="submit"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-has-sub-main2"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-has-sub-main2">
+                        <ul class="nav flex-column has_sub1">
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">c</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu4"></i></button>
+                                <div
+                                    class="text-left text-white collapse" id="collapse-sub-sub-menu4">
+                                    <ul class="nav flex-column sub-sub-menu1">
+                                        <!-- Start: Edit -->
+                                        <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                                        <!-- End: Edit -->
+                                        <!-- Start: c -->
+                                        <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#c">c</a></span></li>
+                                        <!-- End: c -->
+                                        <!-- Start: t -->
+                                        <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                                        <!-- End: t -->
+                                    </ul>
+        </div>
+        </li>
+        <!-- End: c -->
+        <!-- Start: Import-Ticket -->
+        <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">t</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu5"></i></button>
+            <div
+                class="text-left text-white collapse" id="collapse-sub-sub-menu5">
+                <ul class="nav flex-column sub-sub-menu1">
+                    <!-- Start: Edit -->
+                    <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                    <!-- End: Edit -->
+                    <!-- Start: c -->
+                    <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                    <!-- End: c -->
+                    <!-- Start: t -->
+                    <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                    <!-- End: t -->
+                </ul>
+    </div>
+    </li>
+    <!-- End: Import-Ticket -->
+    <!-- Start: Edit-Ticket -->
+    <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">e</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu6"></i></button>
+        <div
+            class="text-left text-white collapse" id="collapse-sub-sub-menu6">
+            <ul class="nav flex-column sub-sub-menu1">
+                <!-- Start: Edit -->
+                <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                <!-- End: Edit -->
+                <!-- Start: c -->
+                <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                <!-- End: c -->
+                <!-- Start: t -->
+                <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                <!-- End: t -->
+            </ul>
+            </div>
+    </li>
+    <!-- End: Edit-Ticket -->
+    </ul>
+    </div>
+    </li>
+    <!-- End: Ticket -->
+    <!-- Start: Ticket -->
+    <li class="nav-item sub-menu-item" style="margin-top: 10px;"><i class="fa fa-archive"></i><span href="#"><a class="active">Gestion du stock</a></span><button class="btn btn-sm collapse-menu-btn" type="submit"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-has-sub-main2"></i></button>
+        <div
+            class="text-left text-white collapse" id="collapse-has-sub-main2">
+            <ul class="nav flex-column has_sub1">
+                <!-- Start: c -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">c</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu4"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu4">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: c -->
+                <!-- Start: Import-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">t</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu5"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu5">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Import-Ticket -->
+                <!-- Start: Edit-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">e</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu6"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu6">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Edit-Ticket -->
+            </ul>
+            </div>
+    </li>
+    <!-- End: Ticket -->
+    <!-- Start: Ticket -->
+    <li class="nav-item sub-menu-item" style="margin-top: 10px;"><i class="fa fa-car"></i><span href="#"><a class="active">Gestion des véhicules</a></span><button class="btn btn-sm collapse-menu-btn" type="submit"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-has-sub-main2"></i></button>
+        <div
+            class="text-left text-white collapse" id="collapse-has-sub-main2">
+            <ul class="nav flex-column has_sub1">
+                <!-- Start: c -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">c</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu4"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu4">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: c -->
+                <!-- Start: Import-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">t</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu5"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu5">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Import-Ticket -->
+                <!-- Start: Edit-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">e</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu6"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu6">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Edit-Ticket -->
+            </ul>
+            </div>
+    </li>
+    <!-- End: Ticket -->
+    <!-- Start: Ticket -->
+    <li class="nav-item sub-menu-item" style="margin-top: 10px;"><i class="fa fa-wrench"></i><span href="#"><a class="active">Maintenance corrective</a></span><button class="btn btn-sm collapse-menu-btn" type="submit"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-has-sub-main2"></i></button>
+        <div
+            class="text-left text-white collapse" id="collapse-has-sub-main2">
+            <ul class="nav flex-column has_sub1">
+                <!-- Start: c -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">C</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu4"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu4">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">E</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#c">C</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">T</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: c -->
+                <!-- Start: Import-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">I</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu5"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu5">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">E</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">C</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">T</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Import-Ticket -->
+                <!-- Start: Edit-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">E</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu6"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu6">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">E</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">C</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">T</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Edit-Ticket -->
+            </ul>
+            </div>
+    </li>
+    <!-- End: Ticket -->
+    <!-- Start: Ticket -->
+    <li class="nav-item sub-menu-item" style="margin-top: 10px;"><i class="fa fa-calendar"></i><span href="#"><a class="active">Calendrier</a></span><button class="btn btn-sm collapse-menu-btn" type="submit"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-has-sub-main2"></i></button>
+        <div
+            class="text-left text-white collapse" id="collapse-has-sub-main2">
+            <ul class="nav flex-column has_sub1">
+                <!-- Start: c -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">C</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu4"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu4">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">E</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#c">C</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">T</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: c -->
+                <!-- Start: Import-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">I</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu5"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu5">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">E</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">C</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">T</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Import-Ticket -->
+                <!-- Start: Edit-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">E</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu6"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu6">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">E</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">C</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">T</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Edit-Ticket -->
+            </ul>
+            </div>
+    </li>
+    <!-- End: Ticket -->
+    <!-- Start: Ticket -->
+    <li class="nav-item sub-menu-item" style="margin-top: 10px;"><i class="fa fa-pencil-square-o"></i><span href="#"><a class="active">Plan de maintenance</a></span><button class="btn btn-sm collapse-menu-btn" type="submit"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-has-sub-main2"></i></button>
+        <div
+            class="text-left text-white collapse" id="collapse-has-sub-main2">
+            <ul class="nav flex-column has_sub1">
+                <!-- Start: c -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">C</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu4"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu4">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">E</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#c">C</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">T</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: c -->
+                <!-- Start: Import-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">I</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu5"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu5">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">E</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">C</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">T</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Import-Ticket -->
+                <!-- Start: Edit-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">e</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu6"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu6">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Edit-Ticket -->
+            </ul>
+            </div>
+    </li>
+    <!-- End: Ticket -->
+    <!-- Start: Ticket -->
+    <li class="nav-item sub-menu-item" style="margin-top: 10px;"><i class="fa fa-bar-chart"></i><span href="#"><a class="active">Tableau de bord</a></span><button class="btn btn-sm collapse-menu-btn" type="submit"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-has-sub-main2"></i></button>
+        <div
+            class="text-left text-white collapse" id="collapse-has-sub-main2">
+            <ul class="nav flex-column has_sub1">
+                <!-- Start: c -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">c</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu4"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu4">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: c -->
+                <!-- Start: Import-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">t</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu5"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu5">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Import-Ticket -->
+                <!-- Start: Edit-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">e</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu6"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu6">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Edit-Ticket -->
+            </ul>
+            </div>
+    </li>
+    <!-- End: Ticket -->
+    <!-- Start: Ticket -->
+    <li class="nav-item sub-menu-item" style="margin-top: 10px;"><i class="fa fa-handshake-o"></i><span href="#"><a class="active">Aide</a></span><button class="btn btn-sm collapse-menu-btn" type="submit"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-has-sub-main2"></i></button>
+        <div
+            class="text-left text-white collapse" id="collapse-has-sub-main2">
+            <ul class="nav flex-column has_sub1">
+                <!-- Start: c -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">c</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu4"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu4">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: c -->
+                <!-- Start: Import-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">t</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu5"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu5">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Import-Ticket -->
+                <!-- Start: Edit-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">e</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu6"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu6">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Edit-Ticket -->
+            </ul>
+            </div>
+    </li>
+    <!-- End: Ticket -->
+    <!-- Start: Ticket -->
+    <li class="nav-item sub-menu-item" style="margin-top: 10px;"><i class="fa fa-cog"></i><span href="#"><a class="active">Paramétre</a></span><button class="btn btn-sm collapse-menu-btn" type="submit"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-has-sub-main2"></i></button>
+        <div
+            class="text-left text-white collapse" id="collapse-has-sub-main2">
+            <ul class="nav flex-column has_sub1">
+                <!-- Start: c -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">c</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu4"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu4">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: c -->
+                <!-- Start:  -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">t</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu5"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu5">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Import-Ticket -->
+                <!-- Start: Edit-Ticket -->
+                <li class="nav-item"><i class="fa fa-chain"></i><span href="#"><a href="#Dashboard">e</a></span><button class="btn btn-sm collapse-menu-btn" type="button"><i class="fa fa-chevron-right rotate-arrow90" data-toggle="collapse" aria-expanded="false" href="#collapse-sub-sub-menu6"></i></button>
+                    <div
+                        class="text-left text-white collapse" id="collapse-sub-sub-menu6">
+                        <ul class="nav flex-column sub-sub-menu1">
+                            <!-- Start: Edit -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#Edit">Edit</a></span></li>
+                            <!-- End: Edit -->
+                            <!-- Start: c -->
+                            <li class="nav-item"><i class="fa fa-chain-broken" data-toggle="tooltip" data-placement="right" title="Dashboard"></i><span href="#"><a href="#c">c</a></span></li>
+                            <!-- End: c -->
+                            <!-- Start: t -->
+                            <li class="nav-item"><i class="fa fa-chain-broken"></i><span href="#"><a href="#t">t</a></span></li>
+                            <!-- End: t -->
+                        </ul>
+                        </div>
+                </li>
+                <!-- End: Edit-Ticket -->
+            </ul>
+            </div>
+    </li>
+    <!-- End: Ticket -->
+    <li class="nav-item" id="search-nav-item" data-toggle="tooltip" data-placement="right" title="Module Search"><input class="form-control-sm d-block leftsidebar-search" type="search" placeholder="Module Search..."></li>
+    </ul>
+    </div>
+    <!-- End: G-Mail Style Left-Side-Bar by Jigar Mistry -->
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+            <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                <div class="container-fluid">
+                    <div class="text-center d-none d-md-inline" style="background-color: rgba(255,255,255,0.58);"></div><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                    <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+                        style="margin-left: 44px;">
+                        <div class="input-group" style="width: 484px;margin-left: 100px;margin-bottom: 0px;"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..." style="margin-left: 88px;margin-bottom: -16px;">
+                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button" style="height: 33px;margin-top: 7px;"><i class="fas fa-search"></i></button></div>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav flex-nowrap ml-auto">
+                        <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" role="menu" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto navbar-search w-100">
+                                    <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                        <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                    role="menu">
+                                    <h6 class="dropdown-header">alerts center</h6>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="mr-3">
+                                            <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 12, 2019</span>
+                                            <p>A new monthly report is ready to download!</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="mr-3">
+                                            <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 7, 2019</span>
+                                            <p>$290.29 has been deposited into your account!</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="mr-3">
+                                            <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 2, 2019</span>
+                                            <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                        </div>
+                                    </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-envelope fa-fw"></i><span class="badge badge-danger badge-counter">7</span></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                    role="menu">
+                                    <h6 class="dropdown-header">alerts center</h6>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatar4.jpeg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                            <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatar2.png">
+                                            <div class="status-indicator"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                            <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatar3.jpeg">
+                                            <div class="bg-warning status-indicator"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                            <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatar5.jpg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                            <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                        </div>
+                                    </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                            </div>
+                            <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow" role="presentation">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="assets/img/avatar1.png"></a>
+                                <div
+                                    class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
+                                    <a
+                                        class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                </div>
+                </li>
+                </ul>
+        </div>
+        </nav>
+
+       <div style=" background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); ">
+        <div class="container" >
+            <h3 class="text-dark mb-1">Calendrier</h3>
+            <div class="row">
+                <div class="border rounded border-light" data-aos="fade-left" data-aos-duration="500" data-aos-delay="350" data-aos-once="true" id="left" style="width: 50%;">
+                    <!-- Start: Calendar (BS4) -->
+                    <div style="margin: 46px;margin-bottom: 10px;height: 440px;"><div class="row row-striped" style="padding-right:-25px;">
+			<div class="col-2 text-center ">
+				<h1 class="display-4 "><span class="badge date-green">14</span></h1>
+				<h2>FEB</h2>
+			</div>
+			<div class="col-8" style="margin-left:15px; ">
+				<h3 class="text-uppercase"><strong>Reunion</strong></h3>
+				<ul class="list-inline">
+				    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Wednesday</li>
+					<li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 18:30 PM - 22:00 PM</li>
+					<li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Restaurant</li>
+				</ul>
+				<p>Reunion urgente dans le cadre de l'evaluation des activités de notre entreprise durant ce trimestre</p>
+			</div>
+		</div><div class="row row-striped"style="padding-right:-25px;">
+			<div class="col-2 text-center">
+				<h1 class="display-4"><span class="badge badge-grey">26</span></h1>
+				<h2>JAN</h2>
+			</div>
+			<div class="col-8"  style="margin-left:15px; ">
+				<h3 class="text-uppercase"><strong>Work Meeting</strong></h3>
+				<ul class="list-inline">
+				    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+					<li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+					<li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Room 1408</li>
+				</ul>
+				<p>Reunion urgente dans le cadre de l'evaluation des activités de notre entreprise durant ce trimestre</p>
+			</div>
+		</div></div>
+                    <!-- End: Calendar (BS4) -->
+                    <!-- Start: Calendar (BS4) -->
+                    <div style="margin: 46px;margin-top: 81px;"><div class="row row-striped" style="padding-right:-25px;">
+			<div class="col-2 text-center ">
+				<h1 class="display-4 "><span class="badge date-green">14</span></h1>
+				<h2>FEB</h2>
+			</div>
+			<div class="col-8"  style="margin-left:15px; ">
+				<h3 class="text-uppercase"><strong>Reunion</strong></h3>
+				<ul class="list-inline">
+				    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Wednesday</li>
+					<li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 18:30 PM - 22:00 PM</li>
+					<li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Restaurant</li>
+				</ul>
+				<p>Reunion urgente dans le cadre de l'evaluation des activités de notre entreprise durant ce trimestre</p>
+			</div>
+		</div></div>
+                    <!-- End: Calendar (BS4) -->
+                    <!-- Start: list page -->
+                    <div class="text-center" style="margin: 0px;"><i class="fa fa-arrow-left border rounded-circle" style="color: rgb(0,0,0);"></i><button class="btn btn-primary border rounded-circle" type="button" style="background-color: #ff8000;color: rgb(0,0,0);">1</button><button class="btn btn-primary border rounded-circle"
+                            type="button" style="color: rgb(0,0,0);background-color: rgba(0,123,255,0);">2</button><button class="btn btn-primary border rounded-circle" type="button" style="background-color: rgba(0,123,255,0);color: rgb(0,0,0);">3</button>
+                        <button
+                            class="btn btn-primary border rounded-circle" type="button" style="color: rgb(0,0,0);background-color: rgba(0,123,255,0);">4</button><button class="btn btn-primary border rounded-circle" type="button" style="color: rgb(0,0,0);background-color: rgba(0,123,255,0);">...</button><button class="btn btn-primary border rounded-circle" type="button" style="color: rgb(0,0,0);background-color: rgba(0,123,255,0);">7</button>
+                            <i
+                                class="fa fa-arrow-right" style="color: rgb(0,0,0);"></i>
+                    </div>
+                    <!-- End: list page -->
+                </div> 
+                <div class="border rounded border-info shadow-lg" data-aos="fade" data-aos-duration="400" id="right" style="width: 50%;background-color: #efefef;padding-left: 33px;padding-top: 12px;margin-right: -50px;padding-right: 22px;margin-top: 43px;height: 847px;">
+                    <h1 style="width: 562px;height: 75px;font-size: 31px;filter: blur(0px) brightness(77%) grayscale(0%) hue-rotate(0deg) invert(0%) saturate(99%);"><br>Welcome Back!<br><br></h1>
+                    <h1 style="font-size: 20px;">Calendar Plan</h1>
+                    <div style="background-color: rgba(0,0,0,0.14);height: 1px;margin-bottom: 37px;"></div>
+                    <div class="bg-danger border rounded border-secondary shadow-lg" id="color_spec" style="height: 124px;margin-top: 14px;filter: blur(0px) brightness(99%) contrast(100%) grayscale(0%) hue-rotate(0deg) invert(0%) saturate(100%);">
+                        <h1 style="font-size: 24px;font-family: ABeeZee, sans-serif;margin-bottom: 1px;margin-top: 23px;margin-left: 47px;">Aujourd'hui</h1>
+                        <p style="font-size: 26px;font-family: ABeeZee, sans-serif;margin-right: -2px;margin-left: 47px;">22 may 2020</p>
+                    </div>
+                    <!-- Start: divider-text-middle -->
+                    <div style="text-align:center;">
+                        <h2 class="divider-style" style="height: 42px;width: 496px;margin-left: 7px;margin-top: 43px;"><span style="font-size: 25px;margin-top: -2px;background-color: rgb(239,239,239);">les événements récents</span></h2>
+                    </div>
+                    <!-- End: divider-text-middle -->
+                    <div style="height: 143px;">
+                        <div>
+                            <div class="d-flex"><i class="fa fa-calendar" style="width: 10%;height: 44px;font-size: 27px;"></i>
+                                <h1 class="text-monospace" style="width: 30%;height: 31px;font-size: 27px;font-family: Roboto, sans-serif;">10:00 am</h1><span class="text-right" style="width: 60%;font-family: 'Nunito Sans', sans-serif;font-size: 18px;">in 30 minutes</span></div>
+                            <p class="float-none">rendez vous de réparation de la voiture matricule 1245</p>
+                        </div>
+                    </div>
+                    <div style="height: 143px;">
+                        <div>
+                            <div class="d-flex"><i class="fa fa-calendar" style="width: 10%;height: 44px;font-size: 27px;"></i>
+                                <h1 class="text-monospace" style="width: 30%;height: 31px;font-size: 27px;font-family: Roboto, sans-serif;">16:39 am</h1><span class="text-right" style="width: 60%;font-family: 'Nunito Sans', sans-serif;font-size: 18px;">in 1 heure</span></div>
+                            <p class="float-none">rendez vous de réparation de la voiture matricule 2654</p>
+                        </div>
+                    </div>
+                    <div style="height: 143px;">
+                        <div>
+                            <div class="d-flex"><i class="fa fa-calendar" style="width: 10%;height: 44px;font-size: 27px;"></i>
+                                <h1 class="text-monospace" style="width: 30%;height: 31px;font-size: 27px;font-family: Roboto, sans-serif;">8:15am</h1><span class="text-right" style="width: 60%;font-family: 'Nunito Sans', sans-serif;font-size: 18px;">in 2 heures 15 minutes</span></div>
+                            <p class="float-none">rendez vous de réparation de la voiture matricule 1245</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="container col-8" data-aos="fade-down" style="margin-top:100px; margin-bottom: 20px; background-color: white;">
+             <div  id="calendar" style="margin-bottom: 20px;"></div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+   </div>
+
+    <footer class="bg-white sticky-footer" style="margin-top: 0px">
+        <div class="container my-auto">
+            <div class="text-center my-auto copyright"><span>Copyright © LGPA 2020</span></div>
+        </div>
+    </footer>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/G-Mail-Style-Left-Side-Bar-by-Jigar-Mistry.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
